@@ -1,0 +1,18 @@
+:root {
+  --main-green: #596D48;
+  --danger-red: red;
+  --light-grey: #E5E7EB;
+  --success-blue: blue;
+}
+
+@font-face {
+  font-family: 'Norse Old';
+  src: url(./res/fonts/Norse-Bold.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
