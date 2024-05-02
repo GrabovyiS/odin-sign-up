@@ -17,46 +17,54 @@
     </footer>
   </aside>
   <main>
-    <p class="heading-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-    <p class="heading-text">You <em>know</em> you want to.</p>
+    <section class="text-section">
+      <p class="heading-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+      <p class="heading-text">You <em>know</em> you want to.</p>
+    </section>
     <section class="form-section">
       <h2>Let's do this</h2>
-      <form action="" id="sign-up">
-        <div>
-          <label for="first_name">First name</label>
-          <input id="first_name" type="text">
-          <p></p>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email">
-          <p></p>
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input id="password" type="password">
-          <p></p>
+      <form action="./index.html" id="sign-up">
+        <div class="form-col">
+          <div>
+            <label for="first_name">First name</label>
+            <input id="first_name" type="text">
+            <p></p>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+            <p>*Enter a valid email</p>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+            <p>*Passwords do not match</p>
+          </div>
         </div>
 
-        <div>
-          <label for="last_name">Last name</label>
-          <input id="last_name" type="text">
-          <p></p>
-        </div>
-        <div>
-          <label for="phone">Phone number</label>
-          <input id="phone" type="tel">
-          <p></p>
-        </div>
-        <div>
-          <label for="confirm_password">Confirm password</label>
-          <input id="confirm_password" type="password">
-          <p></p>
+        <div class="form-col">
+          <div>
+            <label for="last_name">Last name</label>
+            <input id="last_name" type="text">
+            <p></p>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel">
+            <p></p>
+          </div>
+          <div>
+            <label for="confirm_password">Confirm password</label>
+            <input id="confirm_password" type="password" required>
+            <p></p>
+          </div>
         </div>
       </form>
     </section>
-    <button type="submit" form="sign-up">Create Account</button>
-    <p class="login">Already have an account? <a href="#">Log in</a></p>
+    <section class="register-section">
+      <button type="submit" form="sign-up">Create Account</button>
+      <p class="login">Already have an account? <a href="#">Log in</a></p>
+    </section>
   </main>
   <script src="./main.js"></script>
 </body>

@@ -28,6 +28,7 @@ a {
 aside {
   width: 37%;
   height: 100vh;
+  flex: 1 1 auto;
   background-image: url(./res/green-leeves.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -61,5 +62,119 @@ aside footer {
 
 aside footer p {
   color: rgb(197, 197, 197);
-  font-size: 14px;
+  font-size: 12px;
+}
+
+main {
+  background-color: rgb(247, 247, 247);
+  flex: 0 1 auto;
+  max-width: 800px;
+}
+
+.text-section {
+  margin-top: 13vh;
+  padding: 32px;
+}
+
+.heading-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.heading-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-section {
+  margin-top: 20px;
+  padding: 16px 32px 32px 32px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-section h2 {
+  color: #4c4c52;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  gap: 4rem;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-col div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+
+form input {
+  box-sizing: content-box;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid var(--light-grey);
+  width: 200px;
+}
+
+form input:invalid {
+  border: 1px solid var(--danger-red);
+}
+
+form p {
+  position: absolute;
+  bottom: -14px;
+  visibility: hidden;
+}
+
+form input.invalid + p,
+form input:invalid + p {
+  font-size: 10px;
+  color: var(--danger-red);
+  top: 2;
+  visibility: visible;
+}
+
+form input:focus-visible {
+  outline: none;
+  border: 1px solid var(--success-blue);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .6);
+}
+
+button[form="sign-up"] {
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 48px;
+  background-color: var(--main-green);
+  color: white;
+  margin-bottom: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.register-section {
+  padding: 32px;
+}
+
+.register-section a {
+  text-decoration: none;
+  color: var(--main-green);
+  font-weight: bold;
+}
+
+form input.invalid {
+  border: 1px solid var(--danger-red);
 }
